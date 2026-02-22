@@ -35,16 +35,15 @@ Put the three following STL files in one folder, ex.: “model_1”:
 - icp_filename: Same as above
 
 ### Step 3
-Once the paths are in place, run "main.py", it will open prep_file and prep_k_file in a new window. 
+Once the paths are in place, run "main.py", it will open prep_file and prep_k_file in a new window. This is the ICP point determination (to find the overlapping points between both files) and is done once per tooth.
+
+<img width="405" height="339" alt="image" src="https://github.com/user-attachments/assets/fa70e1b8-1fbe-49ec-a967-f23d1cd2910a" />
+
 1. On the blue model (prep_k_file): Left click three distinctable structures
 2. On the red model (prep_file): Right click the same three distinctable structures
 3. Press Enter
 
-This is the ICP point determination (to find the overlapping points between both files) and is done once. Once you press enter, a .npy file is saved (Path=icp_filename) and is loaded when you run main.py for the same tooth again.
-
-A new window (See: Demo) automatically opens. 
-
-<img width="405" height="339" alt="image" src="https://github.com/user-attachments/assets/fa70e1b8-1fbe-49ec-a967-f23d1cd2910a" />
+Once you press enter, a .npy file is saved (Path=icp_filename) and the window for step 4 is opened. The .npy file is loaded when you run main.py for the same tooth again, so that you can skip step 3. If you would like to redo the ICP determination, simply delete/rename the .npy file and run main.py again.
 
 ### Step 4
 Rotate the rotation angle (Z) slider at the bottom to view different angles.
